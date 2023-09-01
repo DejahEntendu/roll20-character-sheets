@@ -156,46 +156,12 @@
                     <th>Misc</th>
                 </tr>
                 <tr>
-                    <th><button type="roll" class="sheet-skillbtn" name="attr_AnimalHandling-skill_roll" value="&{template:skill}{{skill= Animal Handling @{AnimalHandling-include} }} {{character= @{character_name}}} {{Roll= [[@{AnimalHandling-Level}d6k1 + @{AnimalHandling-Attribute} + @{AnimalHandling-Misc} + [[@{Action_Penalty}]] ]] }}" title="Animal Handling"><div class="sheet-smaller">Animal Handling</div></button></th>
-                    <th><input type="number" class="sheet-Specialty" name="attr_AnimalHandling-Level" value="0"/></th>
-                    <th><select class="sheet-Specialty" name="attr_AnimalHandling-Attribute">
-                        <option value="@{Agility}">AGL</option>
-                        <option value="@{Appearance}">APP</option>
-                        <option value="@{Build}">BLD</option>
-                        <option value="@{Creativity}">CRE</option>
-                        <option value="@{Fitness}">FIT</option>
-                        <option value="@{Influence}" selected>INF</option>
-                        <option value="@{Knowledge}" >KNO</option>
-                        <option value="@{Perception}" >PER</option>
-                        <option value="@{Psyche}" >PSY</option>
-                        <option value="@{Willpower}" >WIL</option>
-                    </select></th>
-                    <th><input type="number" class="sheet-Specialty" name="attr_AnimalHandling-Complexity" value="0"/></th>
-                    <th><input type="number" class="sheet-Specialty" name="attr_AnimalHandling-Misc" value="0"/></th>
-                    <th><input type="checkbox" class="sheet-ball" name="attr_AnimalHandling-show" value="1"/><span></span></th>
-                </tr>
-                <tr>
-                    <th>
-                        <input type="checkbox" class="sheet-hidden sheet-hider" name="attr_AnimalHandling-show" value="1"/><span></span>
-                        <div class="sheet-hold">
-                            <input type="radio" class="sheet-bigcheck" name="attr_AnimalHandling-include" value="" checked/><span></span>
-                            <input type="radio" class="sheet-bigcheck" name="attr_AnimalHandling-include" value="(@{AnimalHandling-Notes})"/><span></span>
-                        </div>
-                    </th>
-                    <th colspan="4">
-                        <input type="checkbox" class="sheet-hidden sheet-hider" name="attr_AnimalHandling-show" value="1"/><span></span>
-                        <div class="sheet-hold">
-                            <input type="text" class="sheet-Specialty" name="attr_AnimalHandling-Notes" placeholder="Specializations, type, etc." style="width:100%"/>
-                        </div>
-                    </th>
-                </tr>
-                <tr>
-                    <th><button type="roll" class="sheet-skillbtn" name="attr_Archery-skill_roll" value="&{template:skill}{{skill= Archery @{Archery-include}}} {{Bonus= @{Agility}}} {{character= @{character_name}}} {{Roll= [[@{Archery-Level}d6k1 + @{Archery-Attribute} + @{Archery-Misc} + [[@{Action_Penalty}]] ]] }}" title="Archery">Archery</button></th>
-                    <th><input type="number" class="sheet-Specialty" name="attr_Archery-Level" value="0"/></th>
-                    <th><select class="sheet-Specialty" name="attr_Archery-Attribute">
+                    <th><button type="roll" class="sheet-skillbtn" name="attr_Acrobatics-skill_roll" value="&{template:skill}{{skill= Acrobatics @{Acrobatics-include} }} {{character= @{character_name}}} {{Roll= [[@{Acrobatics-Level}d6k1 + @{Acrobatics-Attribute} + @{Acrobatics-Misc} + [[@{Action_Penalty}]] ]] }}" title="Acrobatics"><div class="sheet-smaller">Acrobatics</div></button></th>
+                    <th><input type="number" class="sheet-Specialty" name="attr_Acrobatics-Level" value="0"/></th>
+                    <th><select class="sheet-Specialty" name="attr_Acrobatics-Attribute">
                         <option value="@{Agility}" selected>AGL</option>
                         <option value="@{Appearance}" >APP</option>
-                        <option value="@{Build}" >BLD</option>
+                        <option value="@{Build}"> BLD</option>
                         <option value="@{Creativity}" >CRE</option>
                         <option value="@{Fitness}" >FIT</option>
                         <option value="@{Influence}" >INF</option>
@@ -204,22 +170,56 @@
                         <option value="@{Psyche}" >PSY</option>
                         <option value="@{Willpower}" >WIL</option>
                     </select></th>
-                    <th><input type="number" class="sheet-Specialty" name="attr_Archery-Complexity" value="0"/></th>
-                    <th><input type="number" class="sheet-Specialty" name="attr_Archery-Misc" value="0"/></th>
-                    <th><input type="checkbox" class="sheet-ball" name="attr_Archery-show" value="1"/><span></span></th>
+                    <th><input type="number" class="sheet-Specialty" name="attr_Acrobatics-Complexity" value="0"/></th>
+                    <th><input type="number" class="sheet-Specialty" name="attr_Acrobatics-Misc" value="0"/></th>
+                    <th><input type="checkbox" class="sheet-ball" name="attr_Acrobatics-show" value="1"/><span></span></th>
                 </tr>
                 <tr>
                     <th>
-                        <input type="checkbox" class="sheet-hidden sheet-hider" name="attr_Archery-show" value="1"/><span></span>
+                        <input type="checkbox" class="sheet-hidden sheet-hider" name="attr_Acrobatics-show" value="1"/><span></span>
                         <div class="sheet-hold">
-                            <input type="radio" class="sheet-bigcheck" name="attr_Archery-include" value="" checked/><span></span>
-                            <input type="radio" class="sheet-bigcheck" name="attr_Archery-include" value="(@{Archery-Notes})"/><span></span>
+                            <input type="radio" class="sheet-bigcheck" name="attr_Acrobatics-include" value="" checked/><span></span>
+                            <input type="radio" class="sheet-bigcheck" name="attr_Acrobatics-include" value="(@{Acrobatics-Notes})"/><span></span>
                         </div>
                     </th>
                     <th colspan="4">
-                        <input type="checkbox" class="sheet-hidden sheet-hider" name="attr_Archery-show" value="1"/><span></span>
+                        <input type="checkbox" class="sheet-hidden sheet-hider" name="attr_Acrobatics-show" value="1"/><span></span>
                         <div class="sheet-hold">
-                            <input type="text" class="sheet-Specialty" name="attr_Archery-Notes" placeholder="Specializations, type, etc." style="width:100%"/>
+                            <input type="text" class="sheet-Specialty" name="attr_Acrobatics-Notes" placeholder="Specializations, type, etc." style="width:100%"/>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><button type="roll" class="sheet-skillbtn" name="attr_Agriculture-skill_roll" value="&{template:skill}{{skill= Agriculture @{Agriculture-include}}} {{Bonus= @{Agility}}} {{character= @{character_name}}} {{Roll= [[@{Agriculture-Level}d6k1 + @{Agriculture-Attribute} + @{Agriculture-Misc} + [[@{Action_Penalty}]] ]] }}" title="Agriculture">Agriculture</button></th>
+                    <th><input type="number" class="sheet-Specialty" name="attr_Agriculture-Level" value="0"/></th>
+                    <th><select class="sheet-Specialty" name="attr_Agriculture-Attribute">
+                        <option value="@{Agility}" >AGL</option>
+                        <option value="@{Appearance}" >APP</option>
+                        <option value="@{Build}" >BLD</option>
+                        <option value="@{Creativity}" >CRE</option>
+                        <option value="@{Fitness}" >FIT</option>
+                        <option value="@{Influence}" >INF</option>
+                        <option value="@{Knowledge}" selected>KNO</option>
+                        <option value="@{Perception}" >PER</option>
+                        <option value="@{Psyche}" >PSY</option>
+                        <option value="@{Willpower}" >WIL</option>
+                    </select></th>
+                    <th><input type="number" class="sheet-Specialty" name="attr_Agriculture-Complexity" value="1"/></th>
+                    <th><input type="number" class="sheet-Specialty" name="attr_Agriculture-Misc" value="0"/></th>
+                    <th><input type="checkbox" class="sheet-ball" name="attr_Agriculture-show" value="1"/><span></span></th>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="checkbox" class="sheet-hidden sheet-hider" name="attr_Agriculture-show" value="1"/><span></span>
+                        <div class="sheet-hold">
+                            <input type="radio" class="sheet-bigcheck" name="attr_Agriculture-include" value="" checked/><span></span>
+                            <input type="radio" class="sheet-bigcheck" name="attr_Agriculture-include" value="(@{Agriculture-Notes})"/><span></span>
+                        </div>
+                    </th>
+                    <th colspan="4">
+                        <input type="checkbox" class="sheet-hidden sheet-hider" name="attr_Agriculture-show" value="1"/><span></span>
+                        <div class="sheet-hold">
+                            <input type="text" class="sheet-Specialty" name="attr_Agriculture-Notes" placeholder="Specializations, type, etc." style="width:100%"/>
                         </div>
                     </th>
                 </tr>
