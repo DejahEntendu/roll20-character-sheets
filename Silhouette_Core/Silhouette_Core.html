@@ -2011,40 +2011,7 @@
                         </div>
                     </th>
                 </tr>
-                <tr>
-                    <th><button type="roll" class="sheet-skillbtn" name="attr_Demolition-skill_roll" value="&{template:skill}{{skill= Demolition @{Demolition-include}}}  {{character= @{character_name}}} {{Roll= [[@{Demolition-Level}d6k1 + @{Demolition-Attribute} + @{Demolition-Misc} + [[@{Action_Penalty}]] ]] }}" title="Demolition">Demolition</button></th>
-                    <th><input type="number" class="sheet-Specialty" name="attr_Demolition-Level" value="0"/></th>
-                    <th><select class="sheet-Specialty" name="attr_Demolition-Attribute">
-                        <option value="@{Agility}" >AGL</option>
-                        <option value="@{Appearance}">APP</option>
-                        <option value="@{Build}">BLD</option>
-                        <option value="@{Creativity}">CRE</option>
-                        <option value="@{Fitness}">FIT</option>
-                        <option value="@{Influence}">INF</option>
-                        <option value="@{Knowledge}" selected>KNO</option>
-                        <option value="@{Perception}" >PER</option>
-                        <option value="@{Psyche}" >PSY</option>
-                        <option value="@{Willpower}" >WIL</option>
-                    </select></th>
-                    <th><input type="number" class="sheet-Specialty" name="attr_Demolition-Complexity" value="1"/></th>
-                    <th><input type="number" class="sheet-Specialty" name="attr_Demolition-Misc" value="0"/></th>
-                    <th><input type="checkbox" class="sheet-ball" name="attr_Demolition-show" value="1"/><span></span></th>
-                </tr>
-                <tr>
-                    <th>
-                        <input type="checkbox" class="sheet-hidden sheet-hider" name="attr_Demolition-show" value="1"/><span></span>
-                        <div class="sheet-hold">
-                            <input type="radio" class="sheet-bigcheck" name="attr_Demolition-include" value="" checked/><span></span>
-                            <input type="radio" class="sheet-bigcheck" name="attr_Demolition-include" value="(@{Demolition-Notes})"/><span></span>
-                        </div>
-                    </th>
-                    <th colspan="4">
-                        <input type="checkbox" class="sheet-hidden sheet-hider" name="attr_Demolition-show" value="1"/><span></span>
-                        <div class="sheet-hold">
-                            <input type="text" class="sheet-Specialty" name="attr_Demolition-Notes" placeholder="Specializations, type, etc." style="width:100%"/>
-                        </div>
-                    </th>
-<tr>
+               <tr>
                     <th><button type="roll" class="sheet-skillbtn" name="attr_Drive-skill_roll" value="&{template:skill}{{skill= Drive @{Drive-include}}}  {{character= @{character_name}}} {{Roll= [[@{Drive-Level}d6k1 + @{Drive-Attribute} + @{Drive-Misc} + [[@{Action_Penalty}]] ]] }}" title="Drive">Drive</button></th>
                     <th><input type="number" class="sheet-Specialty" name="attr_Drive-Level" value="0"/></th>
                     <th><select class="sheet-Specialty" name="attr_Drive-Attribute">
@@ -2367,7 +2334,7 @@
                 </tr>
                 <tr>
                     <th>Instant Death</th>
-                    <th><input type="number" class="sheet-Specialty" name="attr_Instant_Death" value="@{Deep_Wound}*2" disabled='true'/></th>
+                    <th><input type="number" class="sheet-Specialty" name="attr_Instant_Death" value="(@{Deep_Wound}*2)" disabled='true'/></th>
                     <th><input type="number" class="sheet-Specialty" name="attr_Armor" value="0" /></th>
                     <th><input type="number" class="sheet-Specialty" name="attr_Instant_Death-total" value="@{Instant_Death}+@{Armor}" disabled='true' /></th>
                     <th>Dead</th>
